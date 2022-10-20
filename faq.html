@@ -1,0 +1,203 @@
+<html>
+<head>
+   <link rel="icon" href="https://tilde.tel/logo-300.png">
+   <style>
+      @font-face {
+         font-family: 'DejaVu Sans';
+         src: url('https://tilde.tel/fonts/dejavu-sans-webfont.eot');
+         src: url('https://tilde.tel/fonts/dejavu-sans-webfont.eot#iefix') format('embedded-opentype'),
+            url('https://tilde.tel/fonts/dejavu-sans-webfont.woff2') format('woff2'),
+            url('https://tilde.tel/fonts/dejavu-sans-webfont.woff') format('woff'),
+            url('https://tilde.tel/fonts/dejavu-sans-webfont.ttf') format('truetype'),
+            url('https://tilde.tel/fonts/dejavu-sans-webfont.svg#dejavu_sansregular') format('svg');
+      }
+      html {
+         width: 100%;
+         height: 100%;
+         background-color: #f0f0f0;
+      }
+      .splash {
+         position: absolute;
+         width: 400px;
+         height: 400px;
+         top: 38%;
+         left: 50%;
+         margin: -150px 0 0 -200px;
+         font-family: 'DejaVu Sans', sans-serif;
+         text-align: center;
+      }
+      .slogan {
+         font-weight: bold;
+         font-size: 30px;
+         color: #ffa633;
+         font-family: 'DejaVu Sans', sans-serif;
+         text-align: center;
+      }
+      .banner {
+         position: absolute;
+         bottom: 10px;
+         width: 468px;
+         left: 50%;
+         right: 50%;
+         margin: 0px 0px 0px -234px;
+         border: 4px solid #cacaca;
+         background-color: #cacaca;
+         font-family: 'DejaVu Sans', sans-serif;
+         font-size: 9px;
+         color: #f0f0f0;
+      }
+      .info {
+         font-weight: bold;
+         font-size: 17px;
+         color: #FFA633;
+      }
+      .column {
+         float: left;
+      }
+      .left {
+         width: 111px;
+         text-align: center;
+      }
+      .right {
+         width: 639px;
+         text-align: left;
+      }
+      .row:after {
+         content: "";
+         display: table;
+         clear: both;
+      }
+   </style>
+   <title>~tel | FAQ</title>
+</head>
+<body>
+   <div class="row">
+      <div class="column left">
+         <a href="https://tilde.tel/"><img src="https://tilde.tel/logo-300.png" height="66px" width="66px" alt="tilde.tel logo"></a><br/>
+         <br/>
+         <br/>
+         <a href="https://tilde.tel/faq.html"><img src="https://tilde.tel/faq-on.png" height="44px" width="44px" alt="FAQ"></a><br/>
+         <br/>
+         <br/>
+         <a href="https://tilde.tel/phonebook.html"><img src="https://tilde.tel/phonebook-off.png" height="44px" width="44px" alt="Phonebook"></a><br/>
+      </div>
+      <div class="column right">
+         <div class="slogan">
+            FAQ
+         </div>
+            <pre>
+                   ***  ~tel Frequently Asked Questions  ***
+
+                                  Background
+
+   Q. What is this?
+
+   A. tilde.tel is a small hobby software PBX for the tildeverse. So far
+      users can make calls, leave voicemails and participate in a multi-
+      user  conference with  more features  to  come.  The  numbers  are
+      loosely broken down  by tilde,  with  each  tilde  having its  own
+      prefix "area code".
+
+   Q. Who runs it?
+
+   A. I'm cat, you can find me around tilde.town and  circumlunar.space,
+      and on the baud.baby gopher space.
+
+   Q. Do you represent x tilde
+
+   A. No, while I use the names of the  other  tildes and PUBNIX systems
+      as a way to  group  the various ~tel  users I don't claim  to be a
+      representative of them in any way.
+
+
+                            Getting a phone number
+
+   Q. How do I sign up?
+
+   A. Currently  the best way is to yell at me  on IRC on the tilde.chat
+      servers, either directly or in the #tildetel channel. Feel free to
+      yell at me elsewhere but IRC will get you the best results.
+
+   Q. What constitutes a tilde, as far as tilde.tel is concerned?
+
+   A. Basically   any  of  the   community   PUBNIX  systems,   but  not
+      specifically  limited to  the ones that have "tilde" in their name
+      and not specifically  ones that offer  shell  access. Pretty  much
+      anyone will be considered, with the exception of...
+
+   Q. I'm an SDF user, can I have a tilde.tel number?
+
+   A. Nope! SDF already has a really excellent  VoIP  service  that  you
+      should  utilise  instead  and  a  lot  of  tilde.tel  will  mirror
+      functionality the SDF's  service already  has. Being an SDF member
+      of course doesn't  exclude  you from tilde.tel  though, if  you're
+      also a member of a tilde, there just won't be an SDF "area code".
+
+   Q. Can I have x phone number?
+
+   A. Nah, that kind of thing can lead to butting heads and other nonsense.
+
+   Q. If I'm a member of multiple tildes, can I have multiple numbers?
+
+   A. Sure, if you need it why not.
+
+
+                                  Using ~tel
+
+   Q. What are the settings I need to connect?
+
+   A. The settings below should get you up and running:
+
+            Username: [your extension]
+            Password: [your password]
+              Server: connect.tilde.tel
+                Port: 5060
+           Transport: UDP
+
+   Q. Can I update my details? CLI? Reset my password?
+
+   A. Nope! At least not yet. It's gonna be all manual initially while I
+      sort out some kind of system to do that for you.
+
+   Q. Can I call external VoIP numbers or PSTN network numbers?
+
+   A. Not at the moment. URI dialing is in the works  but dialing out to
+      the PSTN network is fraught with danger.
+
+   Q. Can I dial in to ~tel externally?
+
+   A. Again not yet but that functionality is high on my list.
+
+   Q. Can I connect x to ~tel?
+
+   A. Knock  yourself  out. Connect  a  phone, connect your own Asterisk
+      server, connect rusty old analog gear or a  BBS,  it's all good as
+      long as  it doesn't cause too  much mischief or ruin anyone's good
+      time. A robodialer is fun for a minute but gets old pretty quick.
+
+      Which brings us to...
+
+
+                            Using ~tel responsibly
+
+   Q. Does ~tel have a code of conduct/terms of use/whatever?
+
+   A. Sure: Do as thou wilt, harm none. This includes but is not limited
+      too physical, emotional, psychological, financial and esoterical
+      harm.
+
+      Be courteous and treat other users with respect and we'll all have
+      a good time.
+
+   Q. Is there anything I should/should not be doing?
+
+   A. I think the tilde and PUBNIX communities have enough commmon sense
+      to behave but just for  clarity's  sake; keep in mind the users on
+      this  system  are real  people, sometimes  unsolicited  calls  are
+      welcome  and sometimes  not,  try to  be sure  you're  not being a
+      nuisance or pest before dialing out.
+         </pre>
+      </div>
+   </div>
+</body>
+</html>
